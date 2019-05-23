@@ -1,0 +1,122 @@
+body
+{
+    margin: 0%;
+    background-image: linear-gradient(to bottom left,darkslateblue,dodgerblue);
+    height: 100vh;
+}
+.about_container
+{
+    margin-top: 12%;
+    margin-left: 50px;
+    display: inline-block;
+    margin-right: 50px;
+}
+.about_heading
+{
+    font-size: 5em;
+    color: white;
+    font-family: 'Anton', sans-serif;
+    border-bottom: 2px solid white;
+}
+.about_content
+{
+    color:white;
+    font-size: 1.5em;
+    font-family: Helvetica, sans-serif;
+    margin-top: 30px;
+}
+
+/*-----------------------------------------------------
+            NAVIGATION BAR
+-----------------------------------------------------*/
+nav
+{
+    background-color: darkcyan;
+}
+.sticky
+{
+    position: fixed;
+    top: 0%;
+    width: 100%;
+}
+.main-nav
+{
+    float: right;
+    font-size: 1.2em;
+    padding: 17px;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+.link
+{
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding:15px;
+    transition: all 0.3s
+}
+.link:hover
+{
+    transform: scale(1.1);
+    cursor: pointer;
+    background-color: lightseagreen;
+}
+.main-nav .icon
+{
+    display: none;
+}
+/*---------------------------------------------------------------------
+                        RESPONSIVE
+---------------------------------------------------------------------*/
+
+/*----rsponsive navbar----*/
+@media screen and (max-width: 600px)
+{
+    .main-nav a:not(:last-child)
+    {
+        display: none;
+    }
+    .main-nav a.icon
+    {
+      float: right;
+      display: block;
+    }
+}
+/*-------sctive resonsive navbar--------*/  
+@media screen and (max-width: 600px)
+{
+    .main-nav.responsive
+    {
+        position: relative;
+    }
+    .main-nav.responsive .icon
+    {
+      position: absolute;
+      right: 17px;
+      top: 17px;
+    }
+    .main-nav.responsive a
+    {
+      float: left;
+      display: block;
+      text-align: left;
+    }
+}
+
+
+/*------------responsive background---------*/
+@media screen and (max-width: 600px)
+{
+    .about_container
+    {
+        display: flex;
+        flex-wrap: wrap;
+    }    
+    .about_content
+    {
+        font-size: 1.2em;
+    }
+}
+
+
+

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+
+    <title>ERC BITS Goa</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Allerta+Stencil&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="data:image/png;base64,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" />
+
+</head>
+<body>
+
+    <section id="home">
+        <nav class="sticky">
+            <div class="main-nav" id="topnav">
+                <a class="link" href="">Home</a>
+                <a class="link" href="index_about.html">About Us</a>
+                <a class="link" href="#projects">Projects</a>
+                <a class="link" href="#team">Team</a>
+                <a class="link" href="#resources">Resources</a>
+                <a class="link" href="#contact">Contact Us</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="box">
+                <h1 class="heading">ERC</h1>
+                <div class="subtitle">
+                    <!--<div>Welcome to the official website of</div>-->
+                    <div>Electronics and Robotics Club</div>
+                    <div>BITS-Pilani, Goa Campus</div>
+                </div>
+            </div>      
+        </div>
+        </section>
+    <script>
+        function myFunction()
+        {
+            var x = document.getElementById("topnav");
+            if (x.className === "main-nav")
+            {
+                x.className += " responsive";
+            }
+            else
+            {
+                x.className = "main-nav";
+            }
+        }
+    </script>
+</body>
+</html>
