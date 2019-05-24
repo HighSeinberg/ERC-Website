@@ -1,7 +1,7 @@
 body
 {
     margin: 0%;
-    background-image: linear-gradient(to bottom left,darkslateblue,dodgerblue);
+    background-image: linear-gradient(90deg ,darkslateblue,dodgerblue);
     height: 100vh;
 }
 .about_container
