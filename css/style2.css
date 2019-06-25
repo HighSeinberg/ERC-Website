@@ -1,0 +1,47 @@
+.image_dimensions
+{
+    width: 374px;
+    height: 200px;
+}
+#readM1
+{
+    display: block;
+}
+#readM2
+{
+    display: block;
+}
+#readM3
+{
+    display: block;
+}
+#readM4
+{
+    display: block;
+}
+#project_box1
+{
+    display: none;
+    -webkit-transition: 1s;
+    transition: 1s linear;
+}
+#project_box2
+{
+    display: none;
+    transition: 1s linear;
+}
+#project_box3
+{
+    display: none;
+    transition: 1s linear;
+}
+#project_box4
+{
+    display: none;
+    transition: 1s linear;
+}
+.style_text
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+}
