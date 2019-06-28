@@ -29,13 +29,13 @@ function toggle(atri1, atri2)
     {
         atri1.display = 'block';
     }
-    if( atri2.textContent == 'Read More')
+    if( atri2.textContent == 'Show More')
     {
-        atri2.textContent = 'Read Less';
+        atri2.textContent = 'Show Less';
     }
     else
     {
-        atri2.textContent = 'Read More';
+        atri2.textContent = 'Show More';
     }
 }
 

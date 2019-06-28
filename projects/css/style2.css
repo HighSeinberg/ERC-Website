@@ -1,0 +1,36 @@
+
+.image_size
+{
+    width: 40%;
+    height: auto;
+}
+.menu-item
+{
+    cursor: pointer;
+}
+
+#trotbot
+{
+    display: none;
+}
+#quadruped
+{
+    display: none;
+}
+#modbot
+{
+    display: none;
+}
+#ledglobe
+{
+    display: none;
+}
+
+@media only screen and (max-width:600px)
+{
+    .image_size
+    {
+        width: 100%;
+        height: auto;
+    }
+}
