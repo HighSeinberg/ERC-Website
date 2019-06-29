@@ -23,7 +23,7 @@
   <meta name="twitter:image" content="">
 
   <!-- Fav and touch icons -->
-  <link rel="shortcut icon" href="img/icons/favicon.png">
+  <link rel="shortcut icon" href="img/logo.png">
   <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/icons/114x114.png">
   <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/icons/72x72.png">
   <link rel="apple-touch-icon-precomposed" href="img/icons/default.png">
@@ -61,22 +61,7 @@
       
       <!--Header & navbar-branding region-->
       <div class="header">
-        <div class="header-inner container">
-          <div class="row">
-            <div class="col-md-8">
-              <!--navbar-branding/logo - hidden image tag & site name so things like Facebook to pick up, actual logo set via CSS for flexibility -->
-              <a class="navbar-brand" href="index.html" title="Home">
-                <h1 class="hidden">
-                    <img src="img/logo.png" alt="Flexor Logo">
-                    Flexor
-                  </h1>
-              </a>
-              <div class="navbar-slogan">
-                Electronics and Robotics Club
-                <br>BITS-Pilani, Goa Campus
-              </div>
-            </div>
-          </div>
+
         </div>
       </div>
       <div class="container">
@@ -84,13 +69,12 @@
           <!--mobile collapse menu button-->
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
           <!--social media icons-->
-          <div class="navbar-text social-media social-media-inline pull-right">
-            <!--@todo: replace with company social media details-->
+          <!--<div class="navbar-text social-media social-media-inline pull-right">
             <a href="#"><i class="fa fa-twitter"></i></a>
             <a href="#"><i class="fa fa-facebook"></i></a>
             <a href="#"><i class="fa fa-linkedin"></i></a>
             <a href="#"><i class="fa fa-google-plus"></i></a>
-          </div>
+          </div>-->
           <!--everything within this div is collapsed on mobile-->
           <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav" id="main-menu">
@@ -115,7 +99,7 @@
                 <a href="../index.html#resources">Resources</a>
               </li>
               <li>
-                <a href="contact_us">Contact Us</a>
+                <a href="#contact_us">Contact Us</a>
               </li>              
             </ul>
           </div>
@@ -176,24 +160,25 @@
             <li class="active">
               <a href="#trotbot" class="first">
                   Trotbot
-                  <!--<small>How It All Began</small>-->
+                  <small>Status: Ongoing</small>
                 </a>
             </li>
             <li>
               <a href="#quadruped" onclick="showQuad()">
                   Quadruped
-                  <!--<small>Our team of stars</small>-->
+                  <small>Status: Ongoing</small>
                 </a>
             </li>
             <li>
               <a href="#modbot" onclick="shoeMod()">
                   Modbot
-                  <!--<small>How to get in touch</small>-->
+                  <small>Status: Ongoing</small>
                 </a>
             </li>
             <li>
               <a href="#ledglobe" onclick="showLED()">
                 LED Globe
+                <small>Status: Complete</small>
               </a>
             </li>
           </ul>
@@ -214,24 +199,22 @@
               <h3 class="block-title">
                   Team Lead: Mohit Gupta
               </h3>
-              <img src="img/project3.jpg" alt="About us" class="img-responsive img-thumbnail pull-right m-l m-b image_size">
-              <p>Trotbot is a multipurpose robot, designed to serve autonomously in indoor environment. It can be used as follows:</p>
-              <br>
-              <ul>
-                <li>To deliver packages from one location to another in offices, construction sites,etc</li>
-                <li>Can be teleoperated to nearby locations using the camera feed</li>
-              </ul>
-              <br>
-              <p>
-                The robot will be able to autonomously navigate around obstacles and reach waypoints set in and around 
-                the environment with the use of onboard sensors and be able to detect it's location.
-              </p>
-              <br>
-              <p>Currently, we are looking at visual odometry as an alternative for mouse for localisation of the robot.</p>
-              <br>
-              <p>
-                Link to <a href="https://github.com/ERC-BPGC/Trotbot">GitHub repository</a>
-              </p>
+              <img src="img/project3.png" alt="About us" class="img-responsive img-thumbnail pull-right m-l m-b image_size">
+              <p>The main objective is to mimic a four legged animal and get various gaits out of
+                  it like trot,
+                  bound, canter through open loop and closed loop methods. It will be further
+                  used as a
+                  platform for attachment of vision based system for mapping different terrains</p>
+                  <br>
+                <p>We have successfully deployed trotting walk on the quadruped. A ROS(Robot
+                    Operating System) package is also created. A static self-stabilizing PID
+                    controller using an IMU has been created and successfully deployed on the
+                    quadruped.
+                </p>
+                <br>
+                <p>Different gaits will be tested on the quadruped. A dynamic stabilizing strategy
+                    will be developed. Later, environment tracking using realsense depth camera
+                    will be developed.</p>
             </div>
             <!--<div class="block-highlight block-pd-h block-pd-sm">
               <h3 class="block-title">
@@ -249,24 +232,25 @@
               <li>
                 <a href="#trotbot" onclick="showTrot()">
                     Trotbot
-                    <!--<small>How It All Began</small>-->
+                    <small>Status: Ongoing</small>
                   </a>
               </li>
               <li class="active">
                 <a href="#quadruped" class="first">
                     Quadruped
-                    <!--<small>Our team of stars</small>-->
+                    <small>Status: Ongoing</small>
                   </a>
               </li>
               <li>
                 <a href="#modbot" onclick="showMod()">
                     Modbot
-                    <!--<small>How to get in touch</small>-->
+                    <small>Status: Ongoing</small>
                   </a>
               </li>
               <li>
                 <a href="#ledglobe" onclick="showLED()">
                   LED Globe
+                  <small>Status: Complete</small>
                 </a>
               </li>
             </ul>
@@ -313,24 +297,25 @@
               <li>
                 <a href="#trotbot" onclick="showTrot()">
                     Trotbot
-                    <!--<small>How It All Began</small>-->
+                    <small>Status: Ongoing</small>
                   </a>
               </li>
               <li>
                 <a href="#quadruped" onclick="showQuad()">
                     Quadruped
-                    <!--<small>Our team of stars</small>-->
+                    <small>Status: Ongoing</small>
                   </a>
               </li>
               <li class="active">
                 <a href="#modbot" class="first">
                     Modbot
-                    <!--<small>How to get in touch</small>-->
+                    <small>Status: Ongoing</small>
                   </a>
               </li>
               <li>
                 <a href="#ledglobe" onclick="showLED()">
                   LED Globe
+                  <small>Status: Complete</small>
                 </a>
               </li>
             </ul>
@@ -352,22 +337,14 @@
                   Team Lead: Mohit Gupta
               </h3>
               <img src="img/project4.jpeg" alt="About us" class="img-responsive img-thumbnail pull-right m-l m-b image_size">
-              <p>Trotbot is a multipurpose robot, designed to serve autonomously in indoor environment. It can be used as follows:</p>
+              <p>Trotbot was the flagship display project from ERC for Quark 2019, the technical fest of BITS-Goa.</p>
               <br>
-              <ul>
-                <li>To deliver packages from one location to another in offices, construction sites,etc</li>
-                <li>Can be teleoperated to nearby locations using the camera feed</li>
-              </ul>
+              <p>The globe consisted of 2, 75 cm radius acrylic semicircular discs  having LEDs along the perimeter 
+                of one of them. This setup was mounted vertically on a aluminium frame. The setup would be rotated 
+                using a high torque motor. The synchronised firing of LEDs created the illusion of an image.</p>
               <br>
-              <p>
-                The robot will be able to autonomously navigate around obstacles and reach waypoints set in and around 
-                the environment with the use of onboard sensors and be able to detect it's location.
-              </p>
-              <br>
-              <p>Currently, we are looking at visual odometry as an alternative for mouse for localisation of the robot.</p>
-              <br>
-              <p>
-                Link to <a href="https://github.com/ERC-BPGC/Trotbot">GitHub repository</a>
+              <p>The programming that was involved allowed one to take any any image from the internet,
+                divide it into a number of segments which the code could recognize and thus program the LEDs in that manner.
               </p>
             </div>
             <!--<div class="block-highlight block-pd-h block-pd-sm">
@@ -386,24 +363,25 @@
               <li>
                 <a href="#trotbot" onclick="showTrot()">
                     Trotbot
-                    <!--<small>How It All Began</small>-->
+                    <small>Status: Ongoing</small>
                   </a>
               </li>
               <li>
                 <a href="#quadruped" onclick="showQuad()">
                     Quadruped
-                    <!--<small>Our team of stars</small>-->
+                    <small>Status: Ongoing</small>
                   </a>
               </li>
               <li>
                 <a href="#modbot" onclick="showMod()">
                     Modbot
-                    <!--<small>How to get in touch</small>-->
+                    <small>Status: Ongoing</small>
                   </a>
               </li>
               <li class="active">
                 <a href="#ledglobe" class="first">
                   LED Globe
+                  <small>Status: Complete</small>
                 </a>
               </li>
             </ul>
@@ -426,9 +404,9 @@
                 <br>
                 <i class="fa fa-map-pin fa-fw text-primary"></i>BITS-Pilani, K.K. Birla Goa Campus | Sancole | Goa
                 <br>
-                <i class="fa fa-phone fa-fw text-primary"></i>+91 ##########
+                <a href="tel: +919920890738" style="color: #999"><i class="fa fa-phone fa-fw text-primary"></i>+91 9920890738</a>
                 <br>
-                <i class="fa fa-envelope-o fa-fw text-primary"></i>www.ercbitsgoa.com
+                <a href="mailto: ercbitsgoa19@gmail.com" style="color: #999"><i class="fa fa-envelope-o fa-fw text-primary" style="margin-right: 2px;"></i>ercbitsgoa19@gmail.com</a>
                 <br>
               </address>
           </div>
@@ -437,10 +415,10 @@
             <h4 class="text-uppercase">
                 Contact Us
               </h4>
-            <div class="form">
+            <div class="form" id="contact_form">
               <div id="sendmessage">Your message has been sent. Thank you!</div>
               <div id="errormessage"></div>
-              <form action="" method="post" role="form" class="contactForm">
+              <form method="post" role="form" class="contactForm">
                 <div class="form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required/>
                 </div>
@@ -448,7 +426,7 @@
                   <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required/>
                 </div>
                 <div class="form-group">
-                  <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                  <textarea class="form-control" name="message" id="message" rows="5" placeholder="Message" required></textarea>
                 </div>
                 <div class="text-center"><button type="submit">Send Message</button></div>
               </form>
@@ -463,9 +441,9 @@
             <div class="social-media social-media-stacked">
               <!--@todo: replace with company social media details-->
               <a href="#"><i class="fa fa-twitter fa-fw"></i> Twitter</a>
-              <a href="#"><i class="fa fa-facebook fa-fw"></i> Facebook</a>
+              <a href="https://www.facebook.com/ElectronicsAndRoboticsClub/"><i class="fa fa-facebook fa-fw"></i> Facebook</a>
               <a href="#"><i class="fa fa-linkedin fa-fw"></i> LinkedIn</a>
-              <a href="#"><i class="fa fa-google-plus fa-fw"></i> Google+</a>
+              <a href="https://github.com/ERC-BPGC"><i class="fa fa-github fa-fw"></i> GitHub</a>
             </div>
           </div>
 
@@ -473,18 +451,18 @@
         <div class="row subfooter">
           <!--@todo: replace with company copyright details-->
           <div class="col-md-7">
-            <p>Copyright © ERC BITS-Goa</p>
+            <p>Copyright © <script> document.write(new Date().getFullYear()) </script> ERC BITS-Goa</p>
           </div>
           <div class="col-md-5">
-            <ul class="list-inline pull-right">
-              <li><a href="#">Terms</a></li>
-              <li><a href="#">Privacy</a></li>
-            </ul>
+              Developed by <a href="https://www.linkedin.com/in/saumya-bhatt-b1b27916b/">Saumya Bhatt</a> | Designed by <a href="https://www.facebook.com/samaresh.maity.925">Samaresh Maity</a>
           </div>
         </div>
       </div>
     </footer>
   </section>
+
+  <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>
 
   <!-- Required JavaScript Libraries -->
   <script src="lib/jquery/jquery.min.js"></script>
@@ -498,6 +476,7 @@
   <!-- Template Specisifc Custom Javascript File -->
   <script src="js/custom.js"></script>
   <script src="js/show.js"></script>
+  <script src="../js/contact.js"></script>
 
   <!--Custom scripts demo background & colour switcher - OPTIONAL -->
   <script src="js/color-switcher.js"></script>

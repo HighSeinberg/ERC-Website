@@ -23,7 +23,7 @@
   <meta name="twitter:image" content="">
 
   <!-- Fav and touch icons -->
-  <link rel="shortcut icon" href="img/icons/favicon.png">
+  <link rel="shortcut icon" href="img/logo.png">
   <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/icons/114x114.png">
   <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/icons/72x72.png">
   <link rel="apple-touch-icon-precomposed" href="img/icons/default.png">
@@ -91,16 +91,7 @@
           <div class="row">
             <div class="col-md-8">
               <!--navbar-branding/logo - hidden image tag & site name so things like Facebook to pick up, actual logo set via CSS for flexibility -->
-              <a class="navbar-brand" href="index.html" title="Home">
-                <h1 class="hidden">
-                    <img src="img/logo.png" alt="Flexor Logo">
-                    ERC
-                  </h1>
-              </a>
-              <div class="navbar-slogan">
-                Electronics and Robotics Club
-                <br> BITS-Pilani, Goa Campus
-              </div>
+              
             </div>
             <!--header rightside-->
             <!--<div class="col-md-4">
@@ -120,13 +111,12 @@
           <!--mobile collapse menu button-->
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
           <!--social media icons-->
-          <div class="navbar-text social-media social-media-inline pull-right">
-            <!--@todo: replace with company social media details-->
+          <!--<div class="navbar-text social-media social-media-inline pull-right">
             <a href="#"><i class="fa fa-twitter"></i></a>
             <a href="#"><i class="fa fa-facebook"></i></a>
             <a href="#"><i class="fa fa-linkedin"></i></a>
             <a href="#"><i class="fa fa-google-plus"></i></a>
-          </div>
+          </div>-->
           <!--everything within this div is collapsed on mobile-->
           <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav" id="main-menu">
@@ -230,12 +220,18 @@
             About Us
           </h2>
         <p class="style_text" style="text-align:start;">
-            We are a group of highly motivated individuals who are crazy about robotics and it's real world applications!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta laudantium consequatur ex beatae adipisci 
-            recusandae fugit provident incidunt ratione labore rem, natus, facilis asperiores saepe, sunt exercitationem 
-            architecto? Voluptates molestias nobis eum officia fuga. Quibusdam eaque dicta sunt odit voluptatum.
-            <!--<a href="about.html" class="btn btn-more"><i class="fa fa-plus"></i>Read more</a>-->
-          <p>
+          The electronics and Robotics Club of BITS Goa comprises fitness freaks to foodies, bookworms to non ghots 
+          all having the same interest, the love for robotics. 
+        </p>
+        <p class="style_text" style="text-align:start;">
+            Contrary to the name, ERC welcomes not just electronics lovers but is a haven for mechanical and coding 
+            enthusiasts. Juniors work under the guidance of able team leaders along with a wide range of advanced 
+            lab equipment like 3D printers, plasma cutters, PCB milling machines and laser cutter, which enables 
+            the club not just to participate in several technical competitions held across the country but also 
+            to churn out numerous projects each year. 
+            However ERC's major highlight is undoubtedly the Quark Display Project. 
+            From projects like the Osaka clock, a 100*100*100 LED cube, a giant LED globe, ERC aims to go bigger and better every year.
+        </p>
       </div>
     </div>
     <!--Projects-->
@@ -273,7 +269,7 @@
             </div>
             <div class="item">
               <a class="overlay-wrapper">
-                  <img src="img/showcase/project3.jpg" alt="Project 2 image" class="image_dimensions img-responsive underlay">
+                  <img src="img/showcase/project3.png" alt="Project 2 image" class="image_dimensions img-responsive underlay">
                   <span class="overlay">
                     <span class="overlay-content"> <span class="h4">Quadruped</span> </span>
                   </span>
@@ -509,10 +505,6 @@
         </div>
       </div>
     </div>-->
-    <!--
-Background image callout with CSS overlay
-Usage: data-block-bg-img="IMAGE-URL" to apply a background image clearly via jQuery .block-bg-overlay = overlays the background image, colour is inherited from block-bg-* classes .block-bg-overlay-NUMBER = determines opcacity value of overlay from 1-9 (default is 5) ie. .block-bg-overlay-2 or .block-bg-overlay-6
--->
     <!--<div class="block block-pd-sm block-bg-grey-dark block-bg-overlay block-bg-overlay-6 text-center" data-block-bg-img="https://picjumbo.imgix.net/HNCK1088.jpg?q=40&amp;w=1650&amp;sharp=30" data-stellar-background-ratio="0.3">
       <h2 class="h-xlg h1 m-a-0">
           <span data-counter-up>100,000,0</span>s
@@ -648,9 +640,9 @@ Usage: data-block-bg-img="IMAGE-URL" to apply a background image clearly via jQu
                 <br>
                 <i class="fa fa-map-pin fa-fw text-primary"></i>BITS-Pilani, K.K Birla Goa Campus | Sancole | Goa
                 <br>
-                <i class="fa fa-phone fa-fw text-primary"></i>########
+                <a href="tel: +919920890738" style="color: #999"><i class="fa fa-phone fa-fw text-primary"></i>+91 9920890738</a>
                 <br>
-                <i class="fa fa-envelope-o fa-fw text-primary"></i> www.ercbitsgoa.com
+                <a href="mailto: ercbitsgoa19@gmail.com" style="color: #999"><i class="fa fa-envelope-o fa-fw text-primary" style="margin-right: 2px;"></i>ercbitsgoa19@gmail.com</a>
                 <br>
               </address>
           </div>
@@ -659,10 +651,10 @@ Usage: data-block-bg-img="IMAGE-URL" to apply a background image clearly via jQu
             <h4 class="text-uppercase">
                 Leave us a message
               </h4>
-            <div class="form">
+            <div class="form" id="contact_form">
               <div id="sendmessage">Your message has been sent. Thank you!</div>
               <div id="errormessage"></div>
-              <form action="" method="post" role="form" class="contactForm">
+              <form method="post" role="form" class="contactForm">
                 <div class="form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" required />
                 </div>
@@ -670,7 +662,7 @@ Usage: data-block-bg-img="IMAGE-URL" to apply a background image clearly via jQu
                   <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" required />
                 </div>
                 <div class="form-group">
-                  <textarea class="form-control" name="message" rows="5" data-rule="required" required placeholder="Your Message"></textarea>
+                  <textarea class="form-control" name="message" id="message"rows="5" data-rule="required" required placeholder="Your Message"></textarea>
                 </div>
                 <div class="text-center"><button type="submit">Send Message</button></div>
               </form>
@@ -685,27 +677,23 @@ Usage: data-block-bg-img="IMAGE-URL" to apply a background image clearly via jQu
             <div class="social-media social-media-stacked">
               <!--@todo: replace with company social media details-->
               <a href="#"><i class="fa fa-twitter fa-fw"></i> Twitter</a>
-              <a href="#"><i class="fa fa-facebook fa-fw"></i> Facebook</a>
+              <a href="https://www.facebook.com/ElectronicsAndRoboticsClub/"><i class="fa fa-facebook fa-fw"></i> Facebook</a>
               <a href="#"><i class="fa fa-linkedin fa-fw"></i> LinkedIn</a>
-              <a href="#"><i class="fa fa-google-plus fa-fw"></i> Google+</a>
+              <a href="https://github.com/ERC-BPGC"><i class="fa fa-github fa-fw"></i> GitHub</a>
             </div>
           </div>
 
         </div>
 
         <div class="row subfooter">
-          <!--@todo: replace with company copyright details-->
           <div class="col-md-7">
-            <p>Copyright © ERC BITS-Goa</p>
+            <p>Copyright © <script> document.write(new Date().getFullYear()) </script> ERC BITS-Goa</p>
             <!--<div class="credits">
               Developed at <a href="">BITS-Goa</a>
             </div>-->
           </div>
           <div class="col-md-5">
-            <ul class="list-inline pull-right">
-              <li><a href="#">Terms</a></li>
-              <li><a href="#">Privacy</a></li>
-            </ul>
+              Developed by <a href="https://www.linkedin.com/in/saumya-bhatt-b1b27916b/">Saumya Bhatt</a> | Designed by <a href="https://www.facebook.com/samaresh.maity.925">Samaresh Maity</a>
           </div>
         </div>
 
@@ -714,6 +702,9 @@ Usage: data-block-bg-img="IMAGE-URL" to apply a background image clearly via jQu
       </div>
     </footer>
   </section>
+
+  <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>
 
   <!-- Required JavaScript Libraries -->
   <script src="lib/jquery/jquery.min.js"></script>
@@ -727,6 +718,7 @@ Usage: data-block-bg-img="IMAGE-URL" to apply a background image clearly via jQu
   <!-- Template Specisifc Custom Javascript File -->
   <script src="js/custom.js"></script>
   <script src="js/expand.js"></script>
+  <script src="js/contact.js"></script>
 
   <!--Custom scripts demo background & colour switcher - OPTIONAL -->
   <script src="js/color-switcher.js"></script>
